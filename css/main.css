@@ -19,32 +19,32 @@ p {
 }
 
 h1 {
-    font-size: 8.4rem; /* 84px */
+    font-size: 8.4rem; 
     font-weight: 400;
 }
 
 h2 {
-    font-size: 6.4rem; /* 64px */
+    font-size: 6.4rem;
     font-weight: 400;
 }
 
 h3 {
-    font-size: 3rem; /* 36px */
+    font-size: 3rem; 
     font-weight: 400;
 }
 
 h4 {
-    font-size: 4rem; /* 40px */
+    font-size: 4rem; 
     font-weight: 400;
 }
 
 h5 {
-    font-size: 2.4rem; /* 24px */
+    font-size: 2.4rem; 
     font-weight: 500;
 }
 
 p {
-    font-size: 1.5rem; /* 20px */
+    font-size: 1.5rem; 
     font-weight: 400;
     margin-bottom: 1.5rem;
 }
@@ -61,7 +61,7 @@ img {
 
 hr {
     border: none;
-    border-top: 2px solid #CECECE; /* Black outline style */
+    border-top: 2px solid #CECECE;
     margin: 4rem 0;
 }
 
@@ -111,7 +111,7 @@ header {
     display:flex;
     justify-content: flex-end;
     font-family: "Instrument Serif";
-    line-height: 115%; /* 41.4px */
+    line-height: 115%; 
 }
 
 .logo a {
@@ -124,7 +124,7 @@ header {
 /* hero section */
 .hero-area {
     text-align: left;
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-bottom: 1rem;
 }
 
@@ -136,7 +136,6 @@ header {
 .hero-text .highlight {
     color: #4958D9;
 }
-
 
 
 /* case study section */
@@ -227,17 +226,29 @@ button:hover {
 /* about page CSS */
 /* header already done, start with the hello & welcome text part */
 .about-me{
-    text-align: left;
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-me .highlight{
     color: #4958D9;
 }
 
+.about-text{
+    flex-direction: column;
+    margin-right: 2.5rem;
+}
 
+.about-text p{
+    font-size: 1.25rem;;
+}
 
+.about-me img{
+    width:100%;
+    height: auto;
+}
 
 
 
