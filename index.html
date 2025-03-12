@@ -3,79 +3,84 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Hannah Gagnon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <header>
+        <nav class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
 
-        <header>
+        <div class="logo"><a href="index.html">Hannah Gagnon</a></div>
+      </header>
 
-                <nav class="navigation">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </nav>
+      <div class="hero-area">
+        <section class="hero-text">
+          <h1>Hi, I'm <span class="highlight">Hannah.</span></h1>
+          <p>→ Current Interaction Design student.</p>
+          <p>→ Passionate about designing with curiosity & empathy.</p>
+        </section>
+      </div>
 
-                <div class="logo"><a href="index.html">Hannah Gagnon</a></div>
+      <hr />
 
-        </header>
-
-        <div class="hero-area">
-            <section class="hero-text">
-                <h1>Hi, I'm <span class="highlight">Hannah.</span></h1>
-                <p>→ Current Interaction Design student.</p>
-                <p>→ Passionate about designing with curiosity & empathy.</p>
-            </section>
+      <div class="case-studies">
+        <h3>Case Studies</h3>
+        <div class="projects">
+          <div class="project-tgtg">
+            <a href="tgtg-case-study.html">
+              <img
+                src="img/hannah-gagnon-visual-design-terra-roasters-ui-mockup.jpg"
+                alt="Too Good To Go Gift a Bag Feature"
+                width="1900"
+                height="1425"
+            /></a>
+            <p>Too Good To Go Gift a Bag Feature</p>
+          </div>
+          <div class="project-visualdesign">
+            <img
+              src="img/visualdesign-cover.pdf"
+              alt="Visual Design Responsive Modular Design"
+            />
+            <p>Terra Roasters Responsive Modular Design</p>
+          </div>
         </div>
+      </div>
 
-        <hr>
+      <hr />
 
-        <div class="case-studies">
-            <h3>Case Studies</h3>
-            <div class="projects">
-                <div class="project-tgtg">
-                    <img src="img/hannah-gagnon-visual-design-terra-roasters-ui-mockup.jpg" alt="Too Good To Go Gift a Bag Feature" width="1900" height="1425">
-                    <p>Too Good To Go Gift a Bag Feature</p>
-                </div>
-                <div class="project-visualdesign">
-                    <img src="img/visualdesign-cover.pdf" alt="Visual Design Responsive Modular Design">
-                    <p>Terra Roasters Responsive Modular Design</p>
-                </div>
-            </div>
-        </div>
+      <div class="contact-me">
+        <h3>Contact Me</h3>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
 
-        <hr>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
 
-        <div class="contact-me">
-            <h3>Contact Me</h3>
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-            
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-            
-                    <button type="submit">Submit</button>
-                </form>
-        </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
 
+      <hr />
 
-        <hr> 
-
-        <footer>
-            <p>© 2025 Hannah Gagnon. All rights reserved.</p>
-        </footer>
-
+      <footer>
+        <p>© 2025 Hannah Gagnon. All rights reserved.</p>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
