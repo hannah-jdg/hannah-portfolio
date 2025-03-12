@@ -1,6 +1,16 @@
 @import url(reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@300;400;500;700&display=swap");
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   background-color: #f8f8f8;
@@ -29,7 +39,7 @@ h1 {
 }
 
 h2 {
-  font-size: 6.4rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 
@@ -223,10 +233,13 @@ button:hover {
 /* about page CSS */
 /* header already done, start with the hello & welcome text part */
 .about-me {
+  width: 100%;
   margin-top: 6rem;
   margin-bottom: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  background: lightgoldenrodyellow;
 }
 
 .about-me .highlight {
@@ -234,8 +247,14 @@ button:hover {
 }
 
 .about-text {
-  flex-direction: column;
+  width: 100%;
+  /* flex-direction: column; */
   margin-right: 2.5rem;
+  background: lightblue;
+}
+.self-portrait {
+  width: 100%;
+  background: lightpink;
 }
 
 .about-text p {
@@ -253,4 +272,39 @@ footer {
   padding: 2rem 0;
   font-size: 1.6rem;
   color: black;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    background: lightgoldenrodyellow;
+  }
+  h2 {
+    font-size: 6.4rem;
+    color: red;
+  }
+  .about-me {
+    flex-direction: row;
+  }
+
+  .about-text {
+    width: 60%;
+  }
+  .self-portrait {
+    width: 40%;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background: lightblue;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  body {
+    background: lightpink;
+  }
 }
