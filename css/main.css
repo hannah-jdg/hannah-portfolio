@@ -637,13 +637,14 @@ button:hover {
 /* FOOTER CSS*/
 footer {
   text-align: center;
-  font-size: 0.5rem;
+  font-size: 0.25rem;
   color: #4958d9;
   padding-bottom: 2rem;
 }
 
 .footer-navigation ul{
     display: flex;
+    justify-content: center;
     gap: 3rem;
     list-style: none;
     padding-bottom:4rem;
@@ -722,6 +723,13 @@ footer {
 
       .citations p {
         font-size: 1rem;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.5rem;
+        color: #4958d9;
+        padding-bottom: 2rem;
       }
 }
 
