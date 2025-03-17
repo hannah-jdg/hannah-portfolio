@@ -642,6 +642,10 @@ footer {
   padding-bottom: 2rem;
 }
 
+footer p {
+  font-size: 1rem;
+}
+
 .footer-navigation ul{
     display: flex;
     justify-content: center;
@@ -743,6 +747,12 @@ footer {
       color: black;
       font-size: 1.25rem;
   }
+
+  footer p {
+    font-size: 1.25rem;
+  }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
