@@ -653,11 +653,11 @@ footer {
 .footer-navigation a {
     text-decoration: none;
     color: black;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .footer-links a{
-    font-size: 1rem;
+    font-size: 0.75rem;
     text-decoration: none;
     color: #868686;
 }
@@ -725,12 +725,24 @@ footer {
         font-size: 1rem;
       }
 
-      footer {
+      .footer {
         text-align: center;
         font-size: 0.5rem;
         color: #4958d9;
         padding-bottom: 2rem;
       }
+
+      .footer-links a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: #868686;
+    }
+
+    .footer-navigation a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.25rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
