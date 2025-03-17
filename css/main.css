@@ -630,7 +630,7 @@ button:hover {
 }
 
 .citations p {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 
@@ -718,6 +718,10 @@ footer {
     .about-me img {
         width: 80%;
         height: auto;
+      }
+
+      .citations p {
+        font-size: 1rem;
       }
 }
 
