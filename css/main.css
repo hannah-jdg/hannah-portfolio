@@ -1,7 +1,8 @@
+/* help from james */
 @import url(reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@300;400;500;700&display=swap");
 
-/* apply a natural box layout model to all elements, but allowing components to change */
+/* apply a natural box layout model to all elements, but allowing components to change (help from james) */
 html {
   box-sizing: border-box;
 }
@@ -11,6 +12,8 @@ html {
   box-sizing: inherit;
 }
 
+/* start */
+/* set rules */
 body {
   font-family: "DM Sans", sans-serif;
   background-color: #f8f8f8;
@@ -27,14 +30,15 @@ li {
   margin-top: 0;
 }
 
-/* roboto text */
+/* DM Sans text */
 p {
   font-family: "DM Sans", sans-serif;
   margin-top: 0;
 }
 
+/* set rules */
 h1 {
-  font-size: 8.4rem;
+  font-size: 6rem;
   font-weight: 400;
 }
 
@@ -49,25 +53,26 @@ h3 {
 }
 
 h4 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 h5 {
-  font-size: 2.4rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 550;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
 
 a,
 li {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 400;
+  font-family: "DM Sans", sans-serif;
 }
 
 img {
@@ -78,12 +83,12 @@ img {
 hr {
   border: none;
   border-top: 2px solid #cecece;
-  margin: 4rem 0;
+  margin: 3rem 0;
 }
 
-/* homepage CSS */
 
-/* header index.html section */
+
+/*index.html page*/
 .container {
   display: flex;
   flex-direction: column;
@@ -116,32 +121,37 @@ header {
 .navigation a {
   text-decoration: none;
   color: black;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
-/* name logo */
+.navigation a:hover {
+    color: #4958d9;
+}
+
+/* name logo (how do i get the image in instead??? fix later??? )*/
 .logo {
   display: flex;
   justify-content: flex-end;
-  font-family: "Instrument Serif";
   line-height: 115%;
 }
 
-.logo a {
-  text-decoration: none;
-  color: #4958d9;
+/* logo made last semester using adobe illustrator */
+.logo img {
+    width:7rem;
+    height: auto;
 }
 
 /* hero section */
 .hero-area {
   text-align: left;
   margin-top: 6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .hero-text h1 {
-  font-size: 6.4rem;
+  font-size: 6rem;
   font-weight: 400;
+  margin-bottom: 5rem;
 }
 
 .hero-text .highlight {
@@ -150,18 +160,28 @@ header {
 
 /* case study section */
 .case-studies {
-  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.case-studies h3{
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
 }
 
 .projects {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 2rem;
   width: 100%;
 }
 
 .project-tgtg {
   min-width: 300px;
+}
+
+.project-tgtg a{
+    text-decoration: none;
+    color: black;
 }
 
 .project-tgtg img {
@@ -172,9 +192,9 @@ header {
   padding-bottom: 2rem;
 }
 
-.project-pinterest {
-  min-width: 300px;
-}
+.project-visualdesign {
+    min-width: 300px;
+  }
 
 .project-visualdesign img {
   width: 100%;
@@ -184,12 +204,13 @@ header {
   padding-bottom: 2rem;
 }
 
-/* contact section */
+/* contact me section + form + button */
 
 .contact-me h3 {
   margin-bottom: 4rem;
   display: flex;
   justify-content: flex-start;
+  font-size: 2.5rem;
 }
 
 form {
@@ -200,15 +221,14 @@ form {
 }
 
 label {
-  font-size: 1.5rem;
   text-align: left;
 }
 
 input {
   border: 1px solid #cecece;
   border-radius: 0.5rem;
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 0.8rem;
+  font-size: 1.25rem;
   width: 100%;
 }
 
@@ -216,12 +236,14 @@ button {
   background: none;
   border: 1px solid #cecece;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.8rem;
   font-size: 1.6rem;
   cursor: pointer;
   font-size: 1.25rem;
   color: #4958d9;
-  margin-top: 1rem;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 button:hover {
@@ -230,16 +252,18 @@ button:hover {
   transition: 0.3s ease;
 }
 
+
+
+
 /* about page CSS */
 /* header already done, start with the hello & welcome text part */
 .about-me {
   width: 100%;
   margin-top: 6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: lightgoldenrodyellow;
 }
 
 .about-me .highlight {
@@ -248,40 +272,414 @@ button:hover {
 
 .about-text {
   width: 100%;
-  /* flex-direction: column; */
-  margin-right: 2.5rem;
-  background: lightblue;
+  padding-bottom: 3rem;
 }
+
+.about-text h2 {
+    font-size: 4rem;
+}
+
 .self-portrait {
   width: 100%;
-  background: lightpink;
 }
 
 .about-text p {
   font-size: 1.25rem;
+  margin-top: 2.5rem;
 }
 
 .about-me img {
-  width: 100%;
+  width: 80%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* footer for all pages */
+
+
+
+
+/* tgtg case study page CSS */
+.tgtg-intro {
+    padding: 3rem;
+    text-align: center;
+}
+
+.tgtg-intro h4 {
+    font-size: 2rem;
+    padding-bottom: 1.75rem;
+}
+
+.tgtg-intro h3 {
+    font-size: 1.75rem;
+    padding-bottom: 1.75rem;
+    color:#4958d9;
+}
+
+.tgtg-intro p {
+    padding-bottom: 1.75rem;
+}
+
+.tgtg-intro img{
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.tgtg-about-text p{
+    width:65%;
+    text-align: center;
+    color: #4958d9;
+    margin:auto;
+    padding-bottom: 3rem;
+}
+
+
+
+/* project overview section */
+.project-overview-tgtg {
+    background-color: #EEEDF9;
+    padding: 2.75rem;
+    border-radius: 1rem;
+}
+
+.project-overview-tgtg h5 {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-bottom: 1.25rem;
+}
+
+.project-overview-tgtg p {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    padding:0.5rem;
+    line-height: 1.5rem;
+}
+
+
+
+/* tgtg PROBLEM */
+.tgtg-problem {
+    padding-top: 2rem;
+}
+
+.tgtg-problem h5 {
+    font-size: 1.25rem;
+    color: #4958d9;
+    padding-top:1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.tgtg-problem p {
+    line-height: 1.5rem;
+}
+
+
+
+/* tgtg SOLUTION */
+.tgtg-solution {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.tgtg-solution h5 {
+    font-size: 1.25rem;
+    color: #4958d9;
+    padding:1.5rem 0rem;
+}
+
+.tgtg-solution p {
+    line-height: 1.5rem;
+}
+
+
+
+
+/* timeline, tools, responsibilities */
+.tgtg-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.tgtg-info-text {
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem;
+    width: 100%;
+}
+
+.tgtg-info h5 {
+    color: #4958d9;
+    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
+}
+
+.tgtg-info img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* tgtg process */
+.tgtg-process h5{
+    color: #4958d9;
+    font-size: 1.25rem;
+    padding-bottom: 4rem;
+}
+
+.tgtg-process {
+    padding-bottom: 4rem;
+}
+
+.tgtg-process img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* tgtg DEFINE */
+.tgtg-define {
+    padding: 3rem 0rem;
+}
+
+.tgtg-define h5{
+    color: #4958d9;
+    padding-bottom: 1.5rem;
+}
+
+.tgtg-define p:first-child {
+    width: 60%;
+    font-weight: 550;
+}
+
+.tgtg-define ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.tgtg-define li {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+}
+
+
+
+/* tgtg RESEARCH */
+.tgtg-research h5 {
+    color: #4958d9;
+    padding-bottom: 1.5rem;
+}
+
+.tgtg-research p {
+    font-weight: 550;
+}
+
+.tgtg-research ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.tgtg-research li {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+}
+
+
+.iphone-recipient-mockup img{
+    height: auto;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* tgtg INSIGHTS */
+
+.tgtg-insights h5{
+    color: #4958d9;
+    padding-bottom: 2.75rem;
+    padding-top: 2rem;
+}
+
+.tgtg-insight-1 {
+    padding-bottom: 1rem;
+}
+
+.tgtg-insight-1 p:first-child{
+    font-weight: 550;
+}
+
+.tgtg-insight-2 {
+    padding-bottom: 1rem;
+}
+
+.tgtg-insight-2 p:first-child {
+    font-weight: 550;
+}
+
+.tgtg-insight-3 {
+    padding-bottom: 1rem;
+}
+
+.tgtg-insight-3 p:first-child {
+    font-weight: 550;
+}
+
+.tgtg-insight-4 {
+    padding-bottom: 3rem;
+}
+
+.tgtg-insight-4 p:first-child {
+    font-weight: 550;
+}
+
+
+
+
+/* DESING PROCESS TGTG */
+.tgtg-design-process h5{
+    color: #4958d9;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.tgtg-design-process p {
+    width: 90%;
+}
+
+.tgtg-gifting-flow p {
+    padding-top:2rem;
+    padding-bottom: 0.75rem;
+    font-weight: 550;
+}
+
+.tgtg-claim-flow p {
+    padding-top:4rem;
+    padding-bottom: 0.75rem;
+    font-weight: 550;
+}
+
+.send-bag-mockups p {
+    padding-top:6rem;
+    padding-bottom: 1rem;
+    font-weight: 550;
+}
+
+.donate-bag-mockups p {
+    padding-top:6rem;
+    padding-bottom: 1rem;
+    font-weight: 550;
+}
+
+
+
+/* tgtg LEARNINGS */
+.tgtg-learnings h5{
+    color: #4958d9;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+.tgtg-learnings p {
+    line-height: 1.5rem;
+}
+
+/* FOOTER CSS*/
 footer {
   text-align: center;
-  padding: 2rem 0;
-  font-size: 1.6rem;
-  color: black;
+  font-size: 0.5rem;
+  color: #4958d9;
+  padding-bottom: 2rem;
+}
+
+.footer-navigation ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding-bottom:4rem;
+}
+
+.footer-navigation a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-links a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #868686;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+.footer-links a:hover {
+    color: #4958d9;
+}
+
+.footer-navigation a:hover {
+    color: #4958d9;
+}
+
+
+/* help from james MEDIA QUERIES from bootstrap */
+@media (min-width: 768px) {
+    .projects {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .tgtg-info {
+        flex-direction: row; /* Puts text on the left, image on the right */
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .tgtg-info-text {
+        width: 50%; /* Keeps text contained on larger screens */
+    }
+
+    .tgtg-info img {
+        width: 50%; /* Keeps image contained */
+    }
+
+    .tgtg-design-process p {
+        width: 75%;
+    }
+
+    .about-text {
+        margin-right: 3rem;
+    }
+
+    .about-me img {
+        width: 80%;
+        height: auto;
+      }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-    background: lightgoldenrodyellow;
-  }
+
   h2 {
     font-size: 6.4rem;
-    color: red;
   }
   .about-me {
     flex-direction: row;
@@ -293,18 +691,20 @@ footer {
   .self-portrait {
     width: 40%;
   }
+
+  .about-me img {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body {
-    background: lightblue;
-  }
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  body {
-    background: lightpink;
-  }
+
 }
